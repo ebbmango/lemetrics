@@ -1,2 +1,19 @@
-<h1>Pages#sobre</h1>
-<p>Find me in app/views/pages/sobre.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('sobre') %>);">
+  <h1 class="text-white text-center">
+    Quem somos
+  </h1>
+</div>
+
+<div class="container mt-5">
+  <p class= "quem-somos">
+    A LEME é uma consultoria especializada em demandas de alta complexidade, atuando na elaboração de projetos de viabilidade econômico-financeira. 
+    <%= link_to 'elaboração de projetos de viabilidade econômico-financeira', elaboracao_projetos_path %> Prestamos, ainda,
+    <%= link_to 'assistência técnica administrativa, judicial e arbitral', assistencia_tecnica_path %> em casos que exijam conhecimentos em contabilidade, finanças e economia, bem como atuamos como consultores nas searas
+    <%= link_to 'concorrencial', consultoria_concorrencial_path %>
+    e
+    <%= link_to 'regulatória', consultoria_regulatoria_path %>,
+    <%= link_to 'finanças', consultoria_financas_path %> e
+    <%= link_to 'infraestrutura', infraestrutura_path %>.
+  </p>
+  <p class= "quem-somos"> Possuímos uma equipe multidisciplinar, reunindo engenheiros, contadores e economistas, capazes de atuar em projetos que envolvam diferentes áreas do conhecimento, dentre elas, contabilidade, estatística, econometria e programação.</p>
+</div>

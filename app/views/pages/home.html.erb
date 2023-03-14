@@ -1,2 +1,132 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+ <div id="homeCarousel" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('carousel-page-01') %>);">
+        <div class="container text-white">
+          <h2>A LEME é uma consultoria especializada em demandas de alta complexidade</h2>
+          <p>Atuamos na elaboração de projetos de viabilidade econômico-financeira, prestando assistência técnica administrativa, judicial e arbitral, consultoria nas searas concorrencial e regulatória, finanças e infraestrutura.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('carousel-page-02') %>);">
+        <div class="container text-white">
+          <h2>Possuímos uma equipe multidisciplinar altamente qualificada</h2>
+          <p>Reunimos economistas, engenheiros, contadores e outros profissionais altamente qualificados e capazes de atuar em projetos que envolvam diferentes áreas do conhecimento, dentre elas, contabilidade, estatística, econometria e programação.</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('carousel-page-03') %>);">
+        <div class="container text-white">
+          <h2>Setores econômicos atendidos</h2>
+          <p>Atuamos prestando serviço de consultoria a diversos setores econômicos, como agronegócio, infraestrutura, financeiro e construção.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <h2 class="text-center mt-5 section-title">Áreas de Atuação</h2>
+  <div class="cards">
+    <%= link_to elaboracao_projetos_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('elaboracao_projetos') %>)">
+        Elaboração de projetos de viabilidade econômico-financeira
+      </div>
+    <% end %>
+
+    <%= link_to assistencia_tecnica_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('assistencia_tecnica') %>)">
+        Assistência técnica administrativa, judicial e arbitral
+      </div>
+    <% end %>
+
+    <%= link_to consultoria_financas_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('consultoria_financas') %>)">
+        Consultoria em Finanças
+      </div>
+    <% end %>
+
+    <%= link_to consultoria_concorrencial_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('consultoria_concorrencial') %>)">
+        Consultoria Concorrencial
+      </div>
+    <% end %>
+
+    <%= link_to consultoria_regulatoria_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('consultoria_regulatoria') %>)">
+        Consultoria Regulatória e em Infraestrutura
+      </div>
+    <% end %>
+
+    <%= link_to direitos_creditorios_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('direitos_creditorios') %>)">
+        Negociação de direitos creditórios
+      </div>
+    <% end %>
+  </div>
+
+  <hr class="mt-5">
+
+  <h2 class="text-center mt-5 section-title">Setores Econômicos</h2>
+  <div class="cards">
+    <%= link_to agronegocio_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('agronegocio') %>)">
+        Agronegócio
+      </div>
+    <% end %>
+
+    <%= link_to infraestrutura_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('infraestrutura') %>)">
+        Infraestrutura
+      </div>
+    <% end %>
+
+    <%= link_to construcao_civil_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('construcao_civil') %>)">
+        Construção Civil
+      </div>
+    <% end %>
+
+    <%= link_to varejo_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('varejo') %>)">
+        Varejo
+      </div>
+    <% end %>
+
+    <%= link_to instituicoes_financeiras_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('instituicoes_financeiras') %>)">
+        Instituições Financeiras
+      </div>
+    <% end %>
+
+    <%= link_to industria_path do %>
+      <div class="card-category text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('industria') %>)">
+        Indústria
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<script>
+		ScrollReveal().reveal('.card-category', { delay: 125 });
+		ScrollReveal().reveal('.section-title', { delay: 125 });
+		ScrollReveal().reveal('hr', { delay: 125 });
+</script>
