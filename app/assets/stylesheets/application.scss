@@ -1,0 +1,171 @@
+@import "navbar";
+@import "footer";
+@import "banner";
+@import "card";
+@import "grid";
+@import "text";
+@import "team_members";
+
+.carousel-item {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    font-size: 18pt;
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-weight: 300;
+}
+
+.container-button {
+    text-decoration: none;
+  }
+
+.titulo-principal {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-weight: 800;
+    padding: 24px;
+    height: 9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+
+
+.titulo-subtopico {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-weight: 500;
+}
+
+.texto-subtopico {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-size: 18pt;
+    font-weight: 300;
+    text-overflow: clip;
+    text-align: justify;
+
+}
+
+
+
+.quem-somos {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-size: 18pt;
+    font-weight: 300;
+    text-overflow: clip;
+    text-align: justify;
+
+    a {
+      text-decoration: none;
+      color: #202454;
+    }
+}
+
+
+
+.equipe {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-weight: 600;
+    padding-top: 48px;
+    text-overflow: clip;
+}
+
+.email-socios {
+
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-weight: 300;
+    padding-top: 0%;
+    text-overflow: clip;
+}
+
+.cargo-socios
+{
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-weight: 600;
+    padding-top: 0%;
+    text-overflow: clip;
+}
+
+.curriculo-socios
+{
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-weight: 300;
+    padding-top: 0%;
+    text-overflow: clip;
+
+}
+
+.botao-cv {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-weight: 600;
+    padding-top:0%;
+    text-overflow: clip;
+}
+
+.jujubinhas {
+  background-color: #202454 !important;
+  border-color: #202454 !important;
+  font-family: 'Roboto', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+}
+
+.text-center {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-size: 28pt;
+    font-weight: 500;
+    text-overflow: clip;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.titulo-sub-subtopico {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-size: 18pt;
+    font-weight: 500;
+    text-overflow: clip;
+    text-align: justify;
+}
+
+.bullet {
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    color: rgba($color: #646464, $alpha: 1.0);
+    font-size: 16pt;
+    font-weight: 500;
+    text-overflow: clip;
+    text-align: justify;
+
+}
+
+.cards {
+    padding: 40px;
+}
+    
+
+
+
+    

@@ -1,0 +1,32 @@
+.nav-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+}
+
+.nav-link-active {
+  font-weight: 700 !important;
+}
+
+.nav-link:hover {
+  color: #c8c8c8;
+  font-weight: 400;
+  border: none;
+  text-overflow: clip;
+}
+
+.leme-navbar {
+  background-color:#202454;
+  color: white;
+}
+
+.dropdown {
+  font-family: 'Roboto', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  font-weight: 600;
+  text-overflow: clip;
+}
+
+.container {
+  padding: 6px;
+}

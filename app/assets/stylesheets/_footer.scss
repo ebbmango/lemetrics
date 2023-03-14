@@ -1,0 +1,29 @@
+.footer-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+  font-weight: 400;
+  border: none;
+  text-overflow: clip;
+}
+
+.footer-link:hover {
+  color: #fbfbfb;
+  font-family: 'roboto', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  font-weight: 300;
+  border: none;
+  text-overflow: clip;
+}
+
+.column {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+  font-weight: 400;
+  border: none;
+  text-overflow: clip;
+}
+
+
