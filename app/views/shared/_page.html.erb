@@ -1,0 +1,14 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path(asset_path) %>);">
+  <div class="container text-white">
+    <h1><%= text %></h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="d-flex align-items-start gap-5 mt-5">
+      <%= render menu %>
+      <div>
+        <%= render content %>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<ul class="list-group list-group-flush" data-controller="menu">
+  <div class="ms-3 mb-2">
+    <h5 class="text-muted">
+      <%= menu_title %>
+    </h5>
+  </div>
+  <% items.each do |item| %>
+    <%= link_to item[:link_text], item[:link_address], id: item[:link_id], class: "list-group-item list-group-item-action text-nowrap" %>
+  <% end %>
+</ul>

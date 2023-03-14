@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg leme-navbar" data-controller="navbar">
+  <div class="container">
+    <%# Navbar's icon %>
+    <%= link_to root_path, class: 'navbar-brand' do %>
+      <%= image_tag 'logo-leme.png', width: '100px'%>
+    <% end %>
+
+    <%# Navbar's items %>
+    <%= link_to 'Quem somos', sobre_path, class: 'nav-link navbar-link', id: 'sobre' %>
+
+    <div class="dropdown" data-controller="dropdown" data-action="mouseover->dropdown#expand mouseout->dropdown#collapse">
+      <a id="areas" class="nav-link navbar-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" data-dropdown-target="dropdown">Áreas de Atuação</a>
+      <div class="dropdown-menu" data-dropdown-target="menu">
+        <%= link_to 'Elaboração de Projetos de viabilidade econômico-financeira', elaboracao_projetos_path,       class: 'dropdown-item' %>
+        <%= link_to 'Assistência técnica administrativa, judicial e arbitral',    assistencia_tecnica_path,       class: 'dropdown-item' %>
+        <%= link_to 'Consultoria em Finanças',                                    consultoria_financas_path,      class: 'dropdown-item' %>
+        <%= link_to 'Consultoria Concorrencial',                                  consultoria_concorrencial_path, class: 'dropdown-item' %>
+        <%= link_to 'Consultoria Regulatória e em Infraestrutura',                consultoria_regulatoria_path,   class: 'dropdown-item' %>
+        <%= link_to 'Negociação de direitos creditórios',                         direitos_creditorios_path,      class: 'dropdown-item' %>
+      </div>
+    </div>
+
+    <div class="dropdown" data-controller="dropdown" data-action="mouseover->dropdown#expand mouseout->dropdown#collapse">
+      <a id="setores" class="nav-link navbar-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" data-dropdown-target="dropdown">Setores Econômicos</a>
+      <div class="dropdown-menu" data-dropdown-target="menu">
+        <%= link_to 'Agronegócio',              agronegocio_path,              class: 'dropdown-item' %>
+        <%= link_to 'Infraestrutura',           infraestrutura_path,           class: 'dropdown-item' %>
+        <%= link_to 'Construção Civil',         construcao_civil_path,         class: 'dropdown-item' %>
+        <%= link_to 'Varejo',                   varejo_path,                   class: 'dropdown-item' %>
+        <%= link_to 'Instituições Financeiras', instituicoes_financeiras_path, class: 'dropdown-item' %>
+        <%= link_to 'Indústria',                industria_path,                class: 'dropdown-item' %>
+      </div>
+    </div>
+
+    <%= link_to 'Nosso time', time_path, class: 'nav-link navbar-link', id: 'time' %>
+
+    <%# Social media icons %>
+    <div class="d-flex">
+      <%= link_to 'https://www.linkedin.com/company/leme-legal-metrics/', class: 'nav-link mx-2', target: '_blank' do %>
+        <i class="fa-brands fa-linkedin"></i>
+      <% end %>
+      <%= link_to 'https://www.instagram.com/leme_legalmetrics/', class: 'nav-link mx-2', target: '_blank' do %>
+          <i class="fa-brands fa-instagram"></i>
+        <% end %>
+    </div>
+  </div>
+</nav>

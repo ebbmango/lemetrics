@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg leme-navbar">
+  <div class="container-fluid d-flex justify-content-around align-items-center py-3">
+    <div class="column">
+      <h5 class="mb-3">Contato</h5>
+      <div class="d-flex align-items-baseline">
+        <i class="fa-solid fa-phone me-2"></i>
+        <p>+55 21 3434-5656</p>
+      </div>
+      <div class="d-flex align-items-baseline">
+        <i class="fa-solid fa-location-dot me-2"></i>
+        <p>Avenida das Américas, 1155<br>Sala 2007, Barra da Tijuca<br>Rio de Janeiro - RJ<br>CEP 22631-903</p>
+      </div>
+      <div class="d-flex align-items-baseline">
+        <i class="fa-solid fa-location-dot me-2"></i>
+        <p>Complexo Brasil 21<br>SHS, Bloco E, sala 1701<br> Asa Sul, Brasília - DF<br>CEP 70316-102</p>
+      </div>
+    </div>
+
+    <%= link_to root_path, class: 'navbar-brand' do %>
+      <div class="column">
+        <%= image_tag 'logo-leme', style: 'height: 150px' %>
+      </div>
+    <% end %>
+
+    <div class="column">
+      <h5 class="mb-3">Mapa do Site</h5>
+      <div><%= link_to 'Quem somos', sobre_path, class: 'footer-link' %></div>
+      <div><%= link_to 'Áreas de Atuação', elaboracao_projetos_path, class: 'footer-link' %></div>
+      <div><%= link_to 'Setores Econômicos', agronegocio_path, class: 'footer-link' %></div>
+      <div><%= link_to 'Nosso time', time_path, class: 'footer-link' %></div>
+      <div class="d-flex mt-3">
+        <%= link_to 'https://www.linkedin.com/company/leme-legal-metrics/', class: 'nav-link mx-2', target: '_blank' do %>
+          <i class="fa-brands fa-linkedin"></i>
+        <% end %>
+        <%= link_to 'https://www.instagram.com/leme_legalmetrics/', class: 'nav-link mx-2', target: '_blank' do %>
+          <i class="fa-brands fa-instagram"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</nav>
